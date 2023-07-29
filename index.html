@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ADI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <script src="https://kit.fontawesome.com/0ff319aedc.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  </head>
+  <body>
+<!--Navbar start-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">My Portifolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="#home" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#portfolio">Portfolio</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link active" href="prudhvi.pdf">My Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#contact">Contact</a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!--Navbar end-->
+<!---! Banner Start-->
+<section class="bannerBgImage" id="home">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 bannerText">
+          <h2 class="bannerTitle animate__animated animate__fadeInLeft animate__delay-2s	2s animate__slow	2s">Hi There !!</h2>
+          <p class="bannerDesc animate__animated animate__fadeInRight animate__delay-3s	3s animate__slow	2s">From Data Insights to Web Creations:<br> ADIs's Portfolio Journey.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<!---! Banner end-->
+<!-- !About Start-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="adi.jpg" alt="Adi">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am Kotha Adi Shesha Prudhvi Kumar, Pursing btech in Sri Mittapalli College of Engineering in the stream of Computer Science and Engineering with the CGPA of 7.07.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                    <p class="tab-links"onclick="opentab('Certfication')">Certfications</p>       
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Front-End and Back-End Development<br></li>
+                        <li><span>Data science</span><br>Data Analysis and Data Pre-processing<br></li>
+                        <li><span>Coding Languages</span><br>Python, Sql, R-Porgramming<br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018</span><br>SSC in Sai Vikas Educational Instutions with 9.3 G.P.A<br></li>
+                        <li><span>2020</span><br>Intermediate in Sri Chaitanya Junior College with 79.90%<br></li>
+                        <li><span>2024</span><br>Undergraduation in Sri Mittapalli College of Engineering(7.07 G.P.A untill 5th semester, still pursuing)<br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Certfication">
+                    <ul>
+                        <li><span>2022-23</span><br>Completed 4 courses in the National Programme on Technology Enhanced Learning<br>1. Python for Data Science with 64% <br>2. Database Management Systems with 44% <br>3. Data Science for Engineers with 61%<br>4. Joy Of Computing Using Python with 72%<br></li>
+                        <li><span>2022</span><br>I completed two internship training in Verzeo EdTech<br>1. Data Science using Python with two certifications<br>2. Cyber Security with two certifications<br></li>
+                        <li><span>2022</span><br>I had earned three stars and certifications of Hacker Rank in two Languages - Python, SQL<br></li>
+                        <div class="dropdown">
+                          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">View My Certficates</a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="nptel.html">NPTEL Certficates</a></li>
+                            <li><a class="dropdown-item" href="internshi.html">Internship Certficates</a></li>
+                            <li><a class="dropdown-item" href="hacker.html">Hacker Rank Certficates</a></li>
+                            <li><a class="dropdown-item" href="other.html">Other Certificates</a></li>
+                          </ul>
+                        </div>
+                    </ul>
+                </div>
+      
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- !About End-->
+<!-- !Service Start-->
+<div id="services">
+  <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+            <div class="card-body">
+              <h2 class="text-center"><i class="fa-solid fa-code"></i> Web Development</h2>
+              <p><br>With proficiency in HTML, CSS, and JavaScript, I create responsive and user-friendly websites tailored to meet clients' needs. From designing interactive interfaces to implementing dynamic features, I ensure a seamless user experience and captivating design.</p>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="text-center"><i class="bi bi-bar-chart-fill"></i> Data Science and Analysis</h2>
+              <p><br>As a skilled data scientist,I offer data analysis and insights to help businesses make data-driven decisions.I specialize in using Python, SQL, and R-programming to clean, analyze,and visualize data.</p>
+          </div>
+        </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="text-center"><i class="bi bi-braces"></i>  Coding</h2>
+              <p><br>As a dedicated and skilled coder, I offer a wide range of coding services that cater to diverse needs and industries. With proficiency in programming languages such as Python, SQL, and R-programming, I excel in data analysis, visualization, and machine learning applications.</p>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card my-3">
+            <div class="card-body">
+              <h2 class="text-center"><i class="bi bi-braces"></i>  Web pages for events</h2>
+              <p><br>As a skilled web developer, I specialize in creating captivating and personalized webpages for special events such as birthdays, anniversaries, and other celebratory occasions. With a keen eye for design and a passion for creativity, I craft unique and memorable web experiences that reflect the essence of each event.</p>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card my-3">
+            <div class="card-body">
+              <h2 class="text-center"><i class="bi bi-briefcase"></i>  Business Intelligence and Visualization</h2>
+              <p><br>Using tools like Tableau and Anaconda, I develop powerful dashboards and interactive visualizations that transform complex data into meaningful insights. These data visualizations help businesses gain a deeper understanding of their performance and make informed decisions.</p>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card my-3">
+            <div class="card-body">
+              <h2 class="text-center"><i class="bi bi-pen"></i>  Writing and Content Creation</h2>
+              <p><br>As an avid writer, I offer content creation services, including blog posts, articles, and storytelling. My passion for writing enables me to craft engaging and informative content that resonates with the target audience.</p>
+          </div>
+        </div>
+        </div>
+
+        </div>
+        
+
+      </div>
+  </div>
+</div>
+
+<!-- !Service end-->
+<!-- !Portifolio Start-->
+<div id="portfolio">
+  <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="row">
+          <div class="col-md-4">
+          <div class="work">
+              <img src="po1.png" alt="work image 1" height="450" width="120">
+              <div class="layer">
+                  <h3>Password and Otp Genrator</h3>
+                  <p>Now a days Password and Otp Plays a crucial for Security Purpose of the Accounts, By using programming we can Genrate Passwords and Otps randomly using the random functions.</p>
+                      <a href="pass.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+          </div>
+          </div>
+          <div class="col-md-4">
+          <div class="work">
+              <img src="po2.png" alt="work image 2" height="450" width="120"><div class="layer">
+                  <h3>Sentiment Analysis with Python</h3>
+                  <p>Sentiment Analysis meant by classifying a text into various sentiments, such as positive or negative, Happy, Sad or Netural,etc.</p>
+                      <a href="senti.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+          </div>
+          </div>
+          <div class="col-md-4">
+          <div class="work">
+              <img src="po3.jpg" alt="work image 3" height="450" width="120">
+              <div class="layer">
+                  <h3>Spirit Within Book</h3>
+                  <p>It is a story of a weak boy in a world, Where animal spirits combined with the humans, The humans Who posses the Spirits can use the abilities of that animal they posses.</p>
+                      <a href="book.pdf" onclick="return showPDF()"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+  </div>
+</div>
+
+<!-- !Portifolio end-->
+<!-- !contact Start-->
+<div id="contact">
+  <div class="container">
+      <div class="row">
+          <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p><i class="fa-solid fa-paper-plane"></i>adikotha@hotmail.com</p>
+              <p><i class="fa-solid fa-phone"></i>9550923076</p>
+              <div class="social-icons">
+                  <a href="https://www.facebook.com/ricky.adi.79025"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/kamado_d_itachi/"><i class="fa-brands fa-square-instagram"></i></i></a>
+                  <a href="https://twitter.com/adi_kotha"><i class="fa-brands fa-twitter"></i></i></a>
+                  <a href="https://www.linkedin.com/in/kotha-adi-shesha-prudhvi-kumar-90a844266"><i class="fa-brands fa-linkedin"></i></i></a>
+              </div>
+              <a href="prudhvi.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                  <input type="text" name="Name" placeholder="Your Name" required>
+                  <input type="email" name="Email" placeholder="Your Email" required>
+                  <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                  <button type="submit" class="btn btn2">Submit </button>
+              </form>
+               <span id="msg"></span>
+             
+          </div>
+
+      </div>
+  </div>
+  <div class="copyright">
+      <p>copyright © Kotha Adi Shesha Prudhvi Kumar.<i class="bi bi-award"></i></p>
+  </div>
+</div>
+
+<!-- !contact End-->
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-links");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+</script>
+<script>
+  function showPDF() {
+    const pdfContainer = document.getElementById('pdfContainer');
+    const pdfURL = 'path_to_your_pdf_file.pdf';
+
+    // Create an <embed> tag to display the PDF content
+    const embedTag = document.createElement('embed');
+    embedTag.src = pdfURL;
+    embedTag.type = 'application/pdf';
+    embedTag.width = '100%';
+    embedTag.height = '600px';
+
+    // Append the <embed> tag to the container
+    pdfContainer.appendChild(embedTag);
+
+    // Prevent the default link behavior (preventing download)
+    return false;
+  }
+</script>
+<script>
+  document.querySelector('form[name="submit-to-google-sheet"]').addEventListener('submit', handleSubmit);
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    const form = event.target;
+    const formData = new FormData(form);
+    const data = {};
+    formData.forEach((value, key) => {
+      data[key] = value;
+    });
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzDnzmMEwGJJz6TtiZCeL8s7f1jeYFt5tNH-3COkXvvZtvaszD_yYcI9CtNWQmPrsA/exec';
+    fetch(scriptURL, {
+      method: 'POST',
+      mode: 'no-cors',
+      body: JSON.stringify(data),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+      .then(() => {
+        document.getElementById('msg').textContent = 'Message sent successfully!';
+        form.reset();
+      })
+      .catch((error) => {
+        console.error('Error sending message:', error);
+        document.getElementById('msg').textContent = 'Message sending failed!';
+      });
+  }
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
