@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sentiment Analysis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Display Python Code and Output Section -->
+    <section id="code-and-output" class="section">
+      <h2 class="section-title">Python Code and Output</h2>
+      <pre id="pythonCode">import nltk
+nltk.download('vader_lexicon')
+from nltk.sentiment import SentimentIntensityAnalyzer
+
+def analyze_sentiment(text):
+    # Create a SentimentIntensityAnalyzer object
+    sid = SentimentIntensityAnalyzer()
+
+    # Analyze the sentiment of the text
+    scores = sid.polarity_scores(text)
+
+    # Determine the sentiment based on the compound score
+    if scores['compound'] >= 0.05:
+        sentiment = 'positive'
+    elif scores['compound'] <= -0.05:
+        sentiment = 'negative'
+    else:
+        sentiment = 'neutral'
+
+    return sentiment, scores
+
+# Test the sentiment analysis function
+text = input("Enter any text for sentiment analysis: ")
+sentiment, scores = analyze_sentiment(text)
+print(f"Text: {text}")
+print(f"Sentiment: {sentiment}")
+print(f"Sentiment Scores: {scores}")
+</pre>
+      <img id="positiveImage" class="sentiment-image" src="out1.png" alt="Positive Sentiment Image">
+      <img id="negativeImage" class="sentiment-image" src="out2.png" alt="Negative Sentiment Image">
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

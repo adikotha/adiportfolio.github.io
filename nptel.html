@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NPTEL Certifications</title>
+  <link rel="stylesheet" href="certificates.css">
+</head>
+<body>
+  <header>
+    <h1>My NPTEL Certifications</h1>
+  </header>
+
+  <section class="certificates">
+    <div class="certificate" onclick="openImage('The Joy of Computing using Python.jpg')">
+      <img src="The Joy of Computing using Python.jpg" alt="Certificate 1">
+      <h2>Certificate 1</h2>
+      <p>Issued by: NPTEL(SWAYAM)</p>
+    </div>
+
+    <div class="certificate" onclick="openImage('Python for Data Science nptel.jpg')">
+      <img src="Python for Data Science nptel.jpg" alt="Certificate 2">
+      <h2>Certificate 2</h2>
+      <p>Issued by: NPTEL(SWAYAM)</p>
+    </div>
+    <div class="certificate" onclick="openImage('Data Science for Engineers.jpg')">
+      <img src="Data Science for Engineers.jpg" alt="Certificate 3">
+      <h2>Certificate 3</h2>
+      <p>Issued by: NPTEL(SWAYAM)</p>
+    </div>
+    <div class="certificate" onclick="openImage('Data Base Management System.jpg')">
+        <img src="Data Base Management System.jpg" alt="Certificate 4">
+        <h2>Certificate 4</h2>
+        <p>Issued by: NPTEL(SWAYAM)</p>
+      </div>
+  
+    <!-- Add more certificates as needed -->
+  </section>
+
+<div class="modal" id="modal">
+    <span class="close" onclick="closeImage()">&times;</span>
+    <img src="" alt="Certificate 4" id="modalImg">
+  </div>
+
+  <script>
+    function openImage(src) {
+      document.getElementById('modalImg').src = src;
+      document.getElementById('modal').style.display = 'block';
+      document.addEventListener('keydown', handleModalKeyPress);
+    }
+
+    function closeImage() {
+      document.getElementById('modal').style.display = 'none';
+      document.removeEventListener('keydown', handleModalKeyPress);
+    }
+
+    function handleModalKeyPress(event) {
+      if (event.key === 'Escape') {
+        closeImage();
+      }
+    }
+</script>
+</body>
+</html>

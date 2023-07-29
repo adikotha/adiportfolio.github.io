@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INTERNSHIP Certifications</title>
+  <link rel="stylesheet" href="certificates.css">
+</head>
+<body>
+  <header>
+    <h1>My Internship Certifications</h1>
+  </header>
+
+  <section class="certificates">
+    <div class="certificate" onclick="openImage('Verzeo 2.jpg')">
+      <img src="Verzeo 2.jpg" alt="Certificate 1">
+      <h2>Certificate 1</h2>
+      <p>Issued by: Verzeo Edutech</p>
+    </div>
+
+    <div class="certificate" onclick="openImage('Verzeo 1.jpg')">
+      <img src="Verzeo 1.jpg" alt="Certificate 2">
+      <h2>Certificate 2</h2>
+      <p>Issued by: Verzeo Edutech</p>
+    </div>
+    <div class="certificate" onclick="openImage('cs 2.jpg')">
+      <img src="cs 2.jpg" alt="Certificate 3">
+      <h2>Certificate 3</h2>
+      <p>Issued by: Verzeo Edutech</p>
+    </div>
+    <div class="certificate" onclick="openImage('cs 1.jpg')">
+        <img src="cs 1.jpg" alt="Certificate 4">
+        <h2>Certificate 4</h2>
+        <p>Issued by: Verzeo Edutech</p>
+      </div>
+  
+    <!-- Add more certificates as needed -->
+  </section>
+
+<div class="modal" id="modal">
+    <span class="close" onclick="closeImage()">&times;</span>
+    <img src="" alt="Certificate 4" id="modalImg">
+  </div>
+
+  <script>
+    function openImage(src) {
+      document.getElementById('modalImg').src = src;
+      document.getElementById('modal').style.display = 'block';
+      document.addEventListener('keydown', handleModalKeyPress);
+    }
+
+    function closeImage() {
+      document.getElementById('modal').style.display = 'none';
+      document.removeEventListener('keydown', handleModalKeyPress);
+    }
+
+    function handleModalKeyPress(event) {
+      if (event.key === 'Escape') {
+        closeImage();
+      }
+    }
+</script>
+</body>
+</html>
